@@ -1,2 +1,14 @@
 # remove-trend-geotiff
-Removes regional trend of potential field data from data supplied as geotiff images.
+Remove regional trend from potential field data using least squares
+fitting of 3D polynomial plane. For example, removing regional trend
+from magnetic data. Uses GDAL package.
+
+Written in Python 3.8.5
+Christopher Mancuso
+Last updated March 13 2021
+IN:
+	GeoTIFF image (works best if square dimensions)
+	-filename (see raster_name below)(do not include file extention)
+OUT:
+	GeoTIFF image
+	-filename_trend_removed.tiff
